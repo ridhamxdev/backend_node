@@ -1,3 +1,4 @@
+require('dotenv').config();
 const path=require('path');
 const express=require('express');
 const app=express();
@@ -10,9 +11,11 @@ const corsOptions=require('./config/corsOptions.js');
 const { logger }=require('./middleware/logEvents.js');
 const errorHandle=require('./middleware/errorhandler.js');
 const verifyJWT=require('./middleware/verifyJWT.js');
-
+const mongoose=require('mongoose');
+const connectDB=require('./config/dbConn.js');
 const PORT=process.env.PORT;
 
+connectDB();
 app.use(cookieParser());
 app.use(logger);
 app.use(morgan('dev'))
@@ -51,9 +54,13 @@ app.all('*$',(req,res)=>{
 
 app.use(errorHandle);
 
-app.listen(PORT,()=>{
-    console.log(`Server started on PORT ${PORT}`);
+mongoose.connection.once('open',()=>{
+    console.log("MongoDB connected");
+    app.listen(PORT,()=>{
+        console.log(`Server started on PORT ${PORT}`);
+    })
 })
+
 
 
 
