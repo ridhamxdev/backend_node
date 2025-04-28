@@ -1,0 +1,8 @@
+20250428	17:15:04	e944961f-1ffc-4ce6-b884-02e6d5db0253	ReferenceError whitelist is not defined
+20250428	17:15:12	3034063c-aab3-4758-a6d4-0a72dccec042	ReferenceError whitelist is not defined
+20250428	17:16:17	70a51fc2-355b-498c-a33e-3b874d64c1f5	ReferenceError whitelist is not defined
+20250428	17:25:19	d4575e1e-6c14-4b4c-ac59-7af5e2395c62	TypeError res.sendStatus is not a function
+20250428	17:25:28	f3f1a655-5409-43f0-b8ad-d763e8dcfba2	TypeError res.sendStatus is not a function
+20250428	17:31:15	7b9d2087-37fe-40a5-a919-86c995118acb	TypeError res.sendStatus is not a function
+20250428	17:31:20	3d673481-42db-454a-bd1f-53ab88079f4f	TypeError res.sendStatus is not a function
+20250428	17:31:21	fb9c35d3-40dc-4c74-9fbf-f7a908bc5427	TypeError res.sendStatus is not a function

@@ -10,6 +10,7 @@ const corsOptions=require('./config/corsOptions.js');
 const { logger }=require('./middleware/logEvents.js');
 const errorHandle=require('./middleware/errorhandler.js');
 const verifyJWT=require('./middleware/verifyJWT.js');
+
 const PORT=process.env.PORT;
 
 app.use(cookieParser());
